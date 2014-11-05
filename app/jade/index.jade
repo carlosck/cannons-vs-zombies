@@ -1,0 +1,38 @@
+doctype html
+html
+	head
+		title= Game 
+		link(href="style/normalize.css",rel='stylesheet')
+		link(href="style/style.css",rel='stylesheet')
+		meta(charset="UTF-8")
+	body
+		#full_container
+			#stage
+				#world
+					#ball_fake
+					#cannon_line
+						#cannon_1.cannon
+						#cannon_2.cannon
+						#cannon_3.cannon
+						#cannon_4.cannon
+						#cannon_5.cannon
+					#cannon_container
+						#ball_1.ball_container(draggable="true")
+							.ball
+						#ball_2.ball_container(draggable="true")
+							.ball
+						#ball_3.ball_container(draggable="true")
+							.ball
+						#ball_4.ball_container(draggable="true")
+							.ball
+						#ball_5.ball_container(draggable="true")
+							.ball
+					
+					
+		script(type='text/javascript',src="scripts/app.js")
+		script(type='text/javascript',src="scripts/human.js")
+		script(type='text/javascript',src="scripts/zombie.js")
+		script(type='text/javascript',src="scripts/projectile.js")
+
+		script(type='text/javascript',src="scripts/fmw/core.js")
+		script(type='text/javascript',src="scripts/fmw/animation.js")

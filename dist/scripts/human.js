@@ -1,0 +1,2 @@
+!function(t){return t.human=function(t,i,n){this.hp=t,this.body=i,this.left=null,this.top=null,this.velocity=n,this.is_walking=!1,this.stop=function(){},this.restart=function(){},this.update=function(){}}}(App);
+//# sourceMappingURL=./human.map

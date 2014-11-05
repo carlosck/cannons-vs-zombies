@@ -1,0 +1,2 @@
+!function(t){return t.superhero=function(n,o,e,u,r){t.human.call(n,o,e),this.velocity=u,this.canshoot=r,this.update=function(){return console.log("update superhero")}}}(App);
+//# sourceMappingURL=./superhero.map

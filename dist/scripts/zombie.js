@@ -1,0 +1,2 @@
+!function(t){return t.zombie=function(i,n,s,h){t.human.call(this,i,n,s),this.cannon=h,this.update=function(){var t;return t=this,this.is_walking?this.left-=this.velocity:void 0},this.start_walking=function(){return this.left=800,t.css(this.body,{left:this.left+"px"}),t.css(this.body,{top:100*this.cannon+"px"}),this.is_walking=!0}}}(App);
+//# sourceMappingURL=./zombie.map
