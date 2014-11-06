@@ -16,7 +16,6 @@
     };
     this.shoot = function() {
       this.left = 0;
-      console.log("@left " + this.left);
       root.css(this.body, {
         "left": this.left + "px"
       });
@@ -24,6 +23,14 @@
         "top": (this.cannon * 100) + "px"
       });
       return this.is_fired = true;
+    };
+    this.explode = function() {
+      return this.body.parentNode.removeChild(this.body);
+    };
+    this.destroy = function() {
+      if (this.body.parentNode !== null) {
+        return this.body.parentNode.removeChild(this.body);
+      }
     };
   };
 })(App);

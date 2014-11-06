@@ -15,8 +15,51 @@ html,body
 	top: 50%
 	margin-left: -400px
 	margin-top: -300px
-	background-color: lightgray
+	background-color: #979596
+	overflow: hidden
+	#game_over
+		width: 800px
+		height: 600px
+		position: absolute
+		left: 0
+		top: 0
+		background-color: rgba(0,0,0,0.4)
+		z-index: 3
+		display: none
+		p
+			width: 400px
+			position: absolute
+			left: 200px
+			top: 100px
+			color: darkgreen
+			font-size: 60px
+			text-align: center
+			font-weight: bold
+		a
+			width: 300px
+			height: 60px
+			position: absolute
+			top: 300px
+			left: 250px
+			background-color: white
+			color: lightblue
+			text-decoration: none
+			font-size: 60px
+			line-height: 60px
+			border-radius: 15px
+			text-align: center
+		a:hover
+			background-color: lightblue
+			color: white
 
+			
+
+	#yard
+		width: 700px
+		height: 500px
+		position: absolute
+		left: 100px
+		top: 0
 	#cannon_line
 		width: 100px
 		height: 500px
@@ -29,7 +72,8 @@ html,body
 			height: 100px
 			position: relative
 			float: left
-			background-color: tomato
+			background-image: url("../images/cannons/cannon_2.png")
+			background-size: cover
 		.cannon.selected
 			background-color: red
 	#cannon_container
@@ -52,32 +96,78 @@ html,body
 				margin-left: 10px
 				margin-top: 10px
 				float: left
-				background-color: black
-				border-radius: 50px
+				background-size: cover
+	#score_container
+		width: 400px
+		height: 50px
+		position: absolute
+		right: 0
+		bottom: 0
+		z-index: 2	
+		#score_title
+			position: absolute
+			top: 0
+			left: 0
+			font-size: 50px
+		#score
+			font-size: 30px
+			text-align: right
+
+
+				
 
 	.human
-		width: 50px
-		height: 100px
+		
 		position: absolute
-		background-color: magenta
+	.human.alive
+		width: 100px
+		height: 100px	
+	.zombie1.alive
+		width: 100px
+		height: 100px
+		background-image: url("../images/zombie_1_alive1.png")
+	.zombie1.dying
+		width: 163px
+		height: 85px
+		background-image: url("../images/zombie_1_dying.png")
+
+	.zombie2.alive
+		width: 100px
+		height: 100px
+		background-image: url("../images/zombie_2_alive1.png")
+	.zombie2.dying
+		width: 163px
+		height: 85px
+		background-image: url("../images/zombie_2_dying.png")
+	// .neighbor
+	// 	background-color: gold	
+	.neighbor.alive
+		width: 100px
+		height: 100px
+		background-image: url("../images/neighbor_2_alive1.png")
+	.neighbor.dying
+		width: 188px
+		height: 78px
+		background-image: url("../images/neighbor_2_dying.png")
 	.projectile
 		width: 100px
 		height: 100px
 		position: absolute
 		
-		
 		.ball
 			width: 80px
 			height: 80px
-			position: relative
+			position: absolute
 			margin-left: 10px
 			margin-top: 10px
 			float: left
-			background-color: black
-			border-radius: 50px
+			background-size: cover
 	
-	#superhero
-		left: 0
-		bottom: 0
-		background-color: red
+	.ball.ball_1
+		background-image: url("../images/cannonballs/images.jpeg")
+	.ball.ball_2
+		background-image: url("../images/cannonballs/KIrOWD9.png")
+	.ball.ball_3
+		background-image: url("../images/cannonballs/red-blue-circle-cartoon-ball-shadow-christmas.png")
+	
 

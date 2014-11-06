@@ -12,18 +12,19 @@
 			that = this
 			if @is_fired
 				@left+=@velocity 
-					
 
-			
-			
-				
 
 		@shoot= ->
 			@left=0
-			console.log "@left "+@left
 			root.css(@body,{"left":@left+"px"})
 			root.css(@body,{"top":(@cannon*100)+"px"})
 			@is_fired= true
+		@explode= ->
+
+			@.body.parentNode.removeChild(@.body)
+		@destroy= ->
+			if @.body.parentNode != null 
+				@.body.parentNode.removeChild(@.body)
 		
 		
 		return

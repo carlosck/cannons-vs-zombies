@@ -1,1 +1,0 @@
-(function(){!function(t){return t.human=function(t,n){this.hp=null,this.gravity=n,this.init=function(){},this.go=function(){},this.stop=function(){},this.restart=function(){}}}(App)}).call(this);

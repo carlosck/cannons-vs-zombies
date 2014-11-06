@@ -1,25 +1,22 @@
 
 ((root) ->
 
-	root.zombie= (_hp,_body,_velocity,_cannon) -> 
-		root.human.call(this,_hp,_body,_velocity)
+	root.zombie_heavy= (_body,_cannon) -> 
+		root.human.call(this,350,_body,2,200) 
 
 		@cannon = _cannon
 		
 		@update= ->
 			that = this
-			if @is_walking
+			if @status="alive" or @status="dying"
 				@left-=@velocity 
-					
-
-			
-			
-				
 
 		@start_walking= ->
-			@left=800
+			root.find(@body,".healt_bar").innerHTML=this.hp
+			@left=700
 			root.css(@body,{"left":@left+"px"})
 			root.css(@body,{"top":(@cannon*100)+"px"})
+			root.add_class(@body,"alive")
 			@is_walking= true
 		
 		

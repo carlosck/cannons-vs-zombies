@@ -9,8 +9,11 @@
   <body>
     <div id="full_container">
       <div id="stage">
+        <div id="game_over">
+          <p>Game Over</p><a id="continue" href="#">Continue</a>
+        </div>
         <div id="world">
-          <div id="ball_fake"></div>
+          <div id="yard"></div>
           <div id="cannon_line">
             <div id="cannon_1" class="cannon"></div>
             <div id="cannon_2" class="cannon"></div>
@@ -20,28 +23,31 @@
           </div>
           <div id="cannon_container">
             <div id="ball_1" draggable="true" class="ball_container">
-              <div class="ball"></div>
+              <div class="ball ball_1">50</div>
             </div>
             <div id="ball_2" draggable="true" class="ball_container">
-              <div class="ball"></div>
+              <div class="ball ball_2">75</div>
             </div>
             <div id="ball_3" draggable="true" class="ball_container">
-              <div class="ball"></div>
+              <div class="ball ball_3">150</div>
             </div>
-            <div id="ball_4" draggable="true" class="ball_container">
-              <div class="ball"></div>
-            </div>
-            <div id="ball_5" draggable="true" class="ball_container">
-              <div class="ball"></div>
-            </div>
+          </div>
+          <div id="score_container">
+            <div id="score_title">Score</div>
+            <div id="score">0</div>
           </div>
         </div>
       </div>
     </div>
     <script type="text/javascript" src="scripts/app.js"></script>
     <script type="text/javascript" src="scripts/human.js"></script>
-    <script type="text/javascript" src="scripts/zombie.js"></script>
+    <script type="text/javascript" src="scripts/zombie_fast.js"></script>
+    <script type="text/javascript" src="scripts/zombie_heavy.js"></script>
+    <script type="text/javascript" src="scripts/neighbor.js"></script>
     <script type="text/javascript" src="scripts/projectile.js"></script>
+    <script type="text/javascript" src="scripts/cannonball_fast.js"></script>
+    <script type="text/javascript" src="scripts/cannonball_medium.js"></script>
+    <script type="text/javascript" src="scripts/cannonball_heavy.js"></script>
     <script type="text/javascript" src="scripts/fmw/core.js"></script>
     <script type="text/javascript" src="scripts/fmw/animation.js"></script>
   </body>

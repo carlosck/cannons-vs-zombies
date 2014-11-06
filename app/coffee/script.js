@@ -1,2 +1,0 @@
-var App;App={init:function(){var n,t,e;return n=null,e=null,t=null,this.bind()},bind:function(){return this.$stage=this.by_id("stage"),this.$superhero=new human(100,50),console.log($superhero),this.set_on(document,"keydown",App.key_down)},key_down:function(n){return console.log(n)},start:function(){return console.log("start")}},document.addEventListener("DOMContentLoaded",function(){return App.init()});
-//# sourceMappingURL=./script.map
